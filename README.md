@@ -1,35 +1,34 @@
-[logo]: https://github.com/Romainj1/ProjetRMI/blob/master/Insa-logo.png "Logo Title Text 2" 
+<img src="https://www.insa-rouen.fr/themes/custom/insa/assets/images/logo.png" width="200"/>
 
-# Project RMI Info Rep
+#  RMI Project Distributed Informatic
 
-Implementation de RMI Client et Server en Java afin d'illustrer les notions vues en cours
+Implementation of an RMI Client et Server in Java in order to illustrate course notions.
+
 ## Integration :
 ### Travis
-
 [![Build Status](https://travis-ci.org/Romainj1/ProjetRMI.svg?branch=master)](https://travis-ci.org/Romainj1/ProjetRMI)
 
 ### Sonar
-
 ![Sonar Metric](https://sonarcloud.io/api/project_badges/measure?project=ProjetRMI&metric=alert_status) ![Sonar Bugs](https://sonarcloud.io/api/project_badges/measure?project=ProjetRMI&metric=bugs) 
 ![Sonar Code Smells](https://sonarcloud.io/api/project_badges/measure?project=ProjetRMI&metric=code_smells)
 
-## Lancement du programme
+## Running the programm
 
 Le programme nécessite une compilation. Le server et le client doivent être lancés sur des terminaux différents.
 
-### Compiler le projet
+### Compiling step
 
 ```
 ./compile.sh
 ```
 
-### Lancer le Serveur
+### Server running Step
 
 ```
 ./run.sh server
 ```
 
-### Lancer le Client
+### Client running Step
 
 ```
 ./run.sh client
