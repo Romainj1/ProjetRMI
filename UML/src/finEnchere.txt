@@ -1,0 +1,12 @@
+@startuml
+collections Clients
+Client --> Serveur : encherie()
+Serveur --> Serveur : Enchere()
+Serveur --> Serveur : FermeEnchere()
+Serveur --> Clients : NotifieFermeture()
+Client --> Serveur : DemandeEnchere()
+Serveur --> Client : ImpossibilitéEncherir()
+
+
+
+@enduml

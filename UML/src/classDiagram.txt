@@ -1,0 +1,81 @@
+@startuml
+
+
+class Serveur{
+	main()
+	}
+
+class Produit {
+	-int prix
+	-String nom
+	getNom() : String
+	getPrix() : int
+	setPrix(int)
+	}
+
+interface Connection {
+	addClient(Notifiable client, String nom)
+	List<String> demanderEncheres()
+	} 
+
+class ConnectionImpl{
+	-String nom
+	-int port
+	ConnectionImpl()
+	List<String> demanderEncheres()
+	addClient(Notifiable client, String nom)
+	}
+
+ConnectionImpl --|>Connection
+
+
+enum ETAT {
+	ENCOURS
+	CLOS
+	}
+interface Enchere{
+	encherir(Notifiable Notifiable, int prix)
+	getPrix() : int
+	getProduit() : Produit
+	getEtat() : ETAT
+	getMeneur():Notifiable
+	}
+ETAT <- Enchere
+class EnchereImpl{
+	-int temps
+	-Produit produit
+	-ETAT etat
+	-List<Notifiable> lesInteresses
+	-Notifiable Meneur
+	EnchereImpl(int temps, Produit produit)
+	-ajouterNotifiable(Notifiable Notifiable)
+	encherir(Notifiable client, int prix)
+	getPrix() : int
+	getProduit() : Produit
+	getEtat() : ETAT
+	getMeneur() : Notifiable
+	}
+EnchereImpl --|>Enchere
+interface Notifiable{
+	getNom():String
+	afficherEncheres() : List<String>
+	notifyNameTaken()
+	notifierFin(String nomEnchere, int Prix, String meneurActuel)
+	notifier(String nomEnchere, int Prix, String meneurActuel)
+	}
+class Client{
+	{static} main()
+	afficherEncheres() : List<String>
+	notifyNameTaken()
+	notifierFin(String nomEnchere, int Prix, String meneurActuel)
+	notifier(String nomEnchere, int Prix, String meneurActuel)
+}
+
+Client --|>Notifiable
+Enchere -> Produit
+Notifiable <- ConnectionImpl
+Notifiable <- EnchereImpl
+ConnectionImpl <- Serveur
+EnchereImpl <- Serveur
+
+@enduml

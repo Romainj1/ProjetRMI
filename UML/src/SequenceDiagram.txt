@@ -1,0 +1,14 @@
+@startuml
+Client --> Serveur : donne son pseudo
+Serveur --> Serveur : addClient()
+Client --> Serveur : demande la liste des noms d'enchères
+Serveur --> Client : Enchere.liste()
+Client --> Serveur : choisit une enchère
+Serveur --> Client : renvoie l'enchère correspondante
+Client --> Serveur : Enchérit
+collections Clients
+Serveur -> Clients : notifie les autres clients intéressés
+
+
+
+@enduml
