@@ -1,3 +1,5 @@
+[logo]: https://github.com/Romainj1/ProjetRMI/blob/master/Insa-logo.png "Logo Title Text 2" 
+
 # Project RMI Info Rep
 
 Implementation de RMI Client et Server en Java afin d'illustrer les notions vues en cours
