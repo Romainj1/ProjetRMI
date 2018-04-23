@@ -1,3 +1,6 @@
+# Travis Integration :
+[![Build Status](https://travis-ci.org/Romainj1/ProjetRMI.svg?branch=master)](https://travis-ci.org/Romainj1/ProjetRMI)
+
 # Project RMI Info Rep
 
 Implementation de RMI Client et Server en Java afin d'illustrer les notions vues en cours
