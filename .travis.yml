@@ -1,0 +1,10 @@
+language: java
+
+# nothing to install
+install: true
+
+#build step
+script: ./compile.sh
+
+notifications:
+  email: false
