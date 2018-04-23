@@ -11,5 +11,7 @@ _my() {
 }
 complete -F _my ./run.sh
 complete -F _my run.sh
+rm -rf classes/*
+mkdir classes
 javac -cp classes/ -d classes src/projetrmi/*.java
 # sh ./UML/compile.sh
