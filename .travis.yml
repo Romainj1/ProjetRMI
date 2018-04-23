@@ -1,10 +1,18 @@
 language: java
 
-# nothing to install
+# Nothing to install
 install: true
 
-#build step
-script: ./compile.sh
+# Sonar Integration
+addons:
+  sonarcloud:
+    organization: "romainj1-github"
+
+# Build step
+script:
+  - ./compile.sh
+  - sonar-scanner
+
 
 notifications:
   email: false
