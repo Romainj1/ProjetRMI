@@ -11,7 +11,7 @@ addons:
 # Build step
 script:
   - ./compile.sh
-  - sonar-scanner
+  - sonar-scanner -Dsonar.java.binaries=./classes
 
 
 notifications:
