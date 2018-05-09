@@ -9,8 +9,9 @@ Implementation of an RMI Client et Server in Java in order to illustrate course 
 [![Build Status](https://travis-ci.org/Romainj1/ProjetRMI.svg?branch=master)](https://travis-ci.org/Romainj1/ProjetRMI)
 
 ### Sonar
-![Sonar Metric](https://sonarcloud.io/api/project_badges/measure?project=ProjetRMI&metric=alert_status) ![Sonar Bugs](https://sonarcloud.io/api/project_badges/measure?project=ProjetRMI&metric=bugs) 
-![Sonar Code Smells](https://sonarcloud.io/api/project_badges/measure?project=ProjetRMI&metric=code_smells)
+[![Sonar Metric](https://sonarcloud.io/api/project_badges/measure?project=ProjetRMI&metric=alert_status)](https://sonarcloud.io/dashboard?id=ProjetRMI) 
+[![Sonar Bugs](https://sonarcloud.io/api/project_badges/measure?project=ProjetRMI&metric=bugs)](https://sonarcloud.io/dashboard?id=ProjetRMI)
+[![Sonar Code Smells](https://sonarcloud.io/api/project_badges/measure?project=ProjetRMI&metric=code_smells)](https://sonarcloud.io/dashboard?id=ProjetRMI)
 
 ## Running the programm
 
